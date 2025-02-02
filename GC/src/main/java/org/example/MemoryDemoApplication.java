@@ -4,6 +4,33 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+
+// java.lang.OutOfMemoryError
+// посмотреть в папке logs
+/*
+-Xms512m
+-Xmx512m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:HeapDumpPath=./logs/heapdump.hprof
+*/
+
+// более динамические графики
+/*
+-Xms1024m
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:HeapDumpPath=./logs/heapdump.hprof
+*/
+
+// обычные графики
+/*
+-Xms2048m
+-Xmx2048m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:HeapDumpPath=./logs/heapdump.hprof
+*/
+
+
 public class MemoryDemoApplication {
     public static void main(String[] args) throws Exception {
         // Выделение большого массива, как в исходном примере
